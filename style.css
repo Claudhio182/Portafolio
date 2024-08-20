@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,200&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+:root {
+    --headingcolor: #36BA98;
+    --link: #F4A261;
+    --hero: white;
+    --text: #E9C46A;
+}
+
+.main .contact-section {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 13vh;
+    background-color: white;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.logo {
+    font-size: 30px;
+    color: var(--headingcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 35px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--link);
+}
+
+.active {
+    color: var(--headingcolor);
+}
+
+.menu {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--headingcolor);
+    cursor: pointer;
+    display: none;
+}
+
+.menu i {
+    font-size: 30px;
+    color: white;
+}
+
+.hero {
+    width: 100%;
+    height: 87vh;
+    background-color: var(--hero);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.right img {
+    width: 550px;
+    height: 550px;
+}
+
+.left {
+    width: 550px;
+}
+
+.left h3 {
+    color: #36BA98;
+    margin-bottom: 15px;
+}
+
+.left h1 {
+    font-size: 50px;
+    color: var(--link);
+    margin-bottom: 15px;
+}
+
+.left span {
+    font-weight: 200;
+    color: black;
+}
+
+.left p {
+    font-size: 18px;
+    color: var(--text);
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btn button {
+    width: 150px;
+    height: 55px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: var(--headingcolor);
+    color: white;
+    border: none;
+}
+
+.btn2 {
+    background: none;
+    border: 1px solid var(--headingcolor);
+    color: var(--headingcolor);
+    transition: 0.3s;
+}
+
+.btn2:hover {
+    background-color: var(--headingcolor);
+    color: white;
+}
+
+.add {
+    display: block;
+}
+
+.contact-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: var(--headingcolor);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: var(--headingcolors);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #36BA98;
+    border-radius: 15px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid var(--link);
+
+}
+.contact-inputs::placeholder{
+    color: var(--headingcolor);
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,var(--link),var(--headingcolor));
+    cursor: pointer;
+}
+
+/* responsive */
+
+@media(max-width:768px) {
+    header {
+        position: relative;
+        padding: 0px 50px;
+    }
+
+    nav {
+        position: absolute;
+        top: 13vh;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: whitesmoke;
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .hero {
+        height: auto;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .right img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .left {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact-inputs{
+        width: 80vw;
+    }
+}
+
