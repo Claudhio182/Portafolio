@@ -278,3 +278,48 @@ nav ul li a {
     }
 }
 
+
+.projects-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    color: #F4A261;
+}
+
+.projects-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #36BA98;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #555;
+}
